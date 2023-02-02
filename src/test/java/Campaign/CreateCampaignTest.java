@@ -37,6 +37,8 @@ public class CreateCampaignTest extends BaseClass {
 		ValidationAndVerificationPage validate  =new ValidationAndVerificationPage(driver);
 		validate.validateCampaign(campaignName);
 // pushed
+		
+// pulled
 	}
 
 }
