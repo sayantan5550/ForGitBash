@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Organization.CreateOrganizationTest]" verbose="0">
+  <test thread-count="5" name="Command line test(failed)" verbose="0">
+    <classes>
+      <class name="Organization.CreateOrganizationTest">
+        <methods>
+          <include name="AC"/>
+          <include name="BT"/>
+          <include name="AS"/>
+          <include name="AT"/>
+          <include name="BC"/>
+          <include name="BS"/>
+          <include name="BM"/>
+          <include name="createOrg"/>
+          <include name="AM"/>
+        </methods>
+      </class> <!-- Organization.CreateOrganizationTest -->
+    </classes>
+  </test> <!-- Command line test(failed) -->
+</suite> <!-- Failed suite [Organization.CreateOrganizationTest] -->
