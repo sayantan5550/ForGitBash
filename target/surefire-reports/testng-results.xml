@@ -1,103 +1,137 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="16" total="21" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-01-31T20:48:06 IST" name="Organization.CreateOrganizationTest" finished-at="2023-01-31T20:48:27 IST" duration-ms="21660">
+  <suite started-at="2023-02-07T21:07:39 IST" name="Suite" finished-at="2023-02-07T21:08:44 IST" duration-ms="65148">
     <groups>
     </groups>
-    <test started-at="2023-01-31T20:48:06 IST" name="Command line test" finished-at="2023-01-31T20:48:27 IST" duration-ms="21660">
-      <class name="Organization.CreateOrganizationTest">
-        <test-method is-config="true" signature="BS()[pri:0, instance:Organization.CreateOrganizationTest@510f3d34]" started-at="2023-01-31T20:48:06 IST" name="BS" finished-at="2023-01-31T20:48:06 IST" duration-ms="12" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- BS -->
-        <test-method is-config="true" signature="BT()[pri:0, instance:Organization.CreateOrganizationTest@510f3d34]" started-at="2023-01-31T20:48:06 IST" name="BT" finished-at="2023-01-31T20:48:06 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- BT -->
-        <test-method is-config="true" signature="BC()[pri:0, instance:Organization.CreateOrganizationTest@510f3d34]" started-at="2023-01-31T20:48:06 IST" name="BC" finished-at="2023-01-31T20:48:07 IST" duration-ms="1578" status="PASS">
+    <test started-at="2023-02-07T21:07:39 IST" name="Test" finished-at="2023-02-07T21:08:44 IST" duration-ms="65148">
+      <class name="Campaign.CreateCampaignTest">
+        <test-method is-config="true" signature="BC()[pri:0, instance:Campaign.CreateCampaignTest@62150f9e]" started-at="2023-02-07T21:07:51 IST" name="BC" finished-at="2023-02-07T21:07:52 IST" duration-ms="776" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BC -->
-        <test-method is-config="true" signature="BM()[pri:0, instance:Organization.CreateOrganizationTest@510f3d34]" started-at="2023-01-31T20:48:07 IST" name="BM" finished-at="2023-01-31T20:48:10 IST" duration-ms="2294" status="PASS">
+        <test-method is-config="true" signature="BM()[pri:0, instance:Campaign.CreateCampaignTest@62150f9e]" started-at="2023-02-07T21:07:52 IST" name="BM" finished-at="2023-02-07T21:07:54 IST" duration-ms="1996" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BM -->
-        <test-method signature="createOrg()[pri:0, instance:Organization.CreateOrganizationTest@510f3d34]" started-at="2023-01-31T20:48:10 IST" name="createOrg" finished-at="2023-01-31T20:48:23 IST" duration-ms="13755" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [organization name] but found [TestYantra376]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [organization name] but found [TestYantra376]
-at org.testng.Assert.fail(Assert.java:110)
-at org.testng.Assert.failNotEquals(Assert.java:1577)
-at org.testng.Assert.assertEqualsImpl(Assert.java:149)
-at org.testng.Assert.assertEquals(Assert.java:131)
-at org.testng.Assert.assertEquals(Assert.java:655)
-at org.testng.Assert.assertEquals(Assert.java:665)
-at Object_Repo.ValidationAndVerificationPage.validateOrganization(ValidationAndVerificationPage.java:46)
-at Organization.CreateOrganizationTest.createOrg(CreateOrganizationTest.java:45)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:829)
-at org.testng.TestRunner.run(TestRunner.java:602)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
-at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:110)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
-at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
-at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        <test-method signature="createCamp()[pri:0, instance:Campaign.CreateCampaignTest@62150f9e]" started-at="2023-02-07T21:07:54 IST" name="createCamp" finished-at="2023-02-07T21:07:59 IST" duration-ms="4730" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- createOrg -->
-        <test-method is-config="true" signature="AM()[pri:0, instance:Organization.CreateOrganizationTest@510f3d34]" started-at="2023-01-31T20:48:23 IST" name="AM" finished-at="2023-01-31T20:48:27 IST" duration-ms="3660" status="PASS">
+        </test-method> <!-- createCamp -->
+        <test-method is-config="true" signature="AM()[pri:0, instance:Campaign.CreateCampaignTest@62150f9e]" started-at="2023-02-07T21:07:59 IST" name="AM" finished-at="2023-02-07T21:08:02 IST" duration-ms="3265" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AM -->
-        <test-method is-config="true" signature="AC()[pri:0, instance:Organization.CreateOrganizationTest@510f3d34]" started-at="2023-01-31T20:48:27 IST" name="AC" finished-at="2023-01-31T20:48:27 IST" duration-ms="147" status="PASS">
+        <test-method is-config="true" signature="AC()[pri:0, instance:Campaign.CreateCampaignTest@62150f9e]" started-at="2023-02-07T21:08:02 IST" name="AC" finished-at="2023-02-07T21:08:02 IST" duration-ms="141" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AC -->
-        <test-method is-config="true" signature="AT()[pri:0, instance:Organization.CreateOrganizationTest@510f3d34]" started-at="2023-01-31T20:48:27 IST" name="AT" finished-at="2023-01-31T20:48:27 IST" duration-ms="0" status="PASS">
+      </class> <!-- Campaign.CreateCampaignTest -->
+      <class name="Campaign.CreateCampaignWithProductTest">
+        <test-method is-config="true" signature="BC()[pri:0, instance:Campaign.CreateCampaignWithProductTest@1a451d4d]" started-at="2023-02-07T21:08:02 IST" name="BC" finished-at="2023-02-07T21:08:03 IST" duration-ms="741" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BC -->
+        <test-method is-config="true" signature="BM()[pri:0, instance:Campaign.CreateCampaignWithProductTest@1a451d4d]" started-at="2023-02-07T21:08:03 IST" name="BM" finished-at="2023-02-07T21:08:05 IST" duration-ms="2046" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BM -->
+        <test-method signature="campWithProd()[pri:0, instance:Campaign.CreateCampaignWithProductTest@1a451d4d]" started-at="2023-02-07T21:08:05 IST" name="campWithProd" finished-at="2023-02-07T21:08:17 IST" duration-ms="11959" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- campWithProd -->
+        <test-method is-config="true" signature="AM()[pri:0, instance:Campaign.CreateCampaignWithProductTest@1a451d4d]" started-at="2023-02-07T21:08:17 IST" name="AM" finished-at="2023-02-07T21:08:21 IST" duration-ms="3594" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AM -->
+        <test-method is-config="true" signature="AC()[pri:0, instance:Campaign.CreateCampaignWithProductTest@1a451d4d]" started-at="2023-02-07T21:08:21 IST" name="AC" finished-at="2023-02-07T21:08:21 IST" duration-ms="147" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AC -->
+      </class> <!-- Campaign.CreateCampaignWithProductTest -->
+      <class name="Organization.CreateOrganizationTest">
+        <test-method is-config="true" signature="BC()[pri:0, instance:Organization.CreateOrganizationTest@15ff3e9e]" started-at="2023-02-07T21:08:21 IST" name="BC" finished-at="2023-02-07T21:08:22 IST" duration-ms="777" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BC -->
+        <test-method is-config="true" signature="BM()[pri:0, instance:Organization.CreateOrganizationTest@15ff3e9e]" started-at="2023-02-07T21:08:22 IST" name="BM" finished-at="2023-02-07T21:08:24 IST" duration-ms="1990" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BM -->
+        <test-method signature="createOrg()[pri:0, instance:Organization.CreateOrganizationTest@15ff3e9e]" started-at="2023-02-07T21:08:24 IST" name="createOrg" finished-at="2023-02-07T21:08:29 IST" duration-ms="5777" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createOrg -->
+        <test-method is-config="true" signature="AM()[pri:0, instance:Organization.CreateOrganizationTest@15ff3e9e]" started-at="2023-02-07T21:08:29 IST" name="AM" finished-at="2023-02-07T21:08:33 IST" duration-ms="3346" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AM -->
+        <test-method is-config="true" signature="AC()[pri:0, instance:Organization.CreateOrganizationTest@15ff3e9e]" started-at="2023-02-07T21:08:33 IST" name="AC" finished-at="2023-02-07T21:08:33 IST" duration-ms="150" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AC -->
+      </class> <!-- Organization.CreateOrganizationTest -->
+      <class name="Product.CreateProductTest">
+        <test-method is-config="true" signature="BS()[pri:0, instance:Product.CreateProductTest@61862a7f]" started-at="2023-02-07T21:07:39 IST" name="BS" finished-at="2023-02-07T21:07:39 IST" duration-ms="12" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BS -->
+        <test-method is-config="true" signature="BT()[pri:0, instance:Product.CreateProductTest@61862a7f]" started-at="2023-02-07T21:07:39 IST" name="BT" finished-at="2023-02-07T21:07:39 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BT -->
+        <test-method is-config="true" signature="BC()[pri:0, instance:Product.CreateProductTest@61862a7f]" started-at="2023-02-07T21:07:39 IST" name="BC" finished-at="2023-02-07T21:07:40 IST" duration-ms="1367" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BC -->
+        <test-method is-config="true" signature="BM()[pri:0, instance:Product.CreateProductTest@61862a7f]" started-at="2023-02-07T21:07:40 IST" name="BM" finished-at="2023-02-07T21:07:42 IST" duration-ms="2005" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BM -->
+        <test-method signature="createProd()[pri:0, instance:Product.CreateProductTest@61862a7f]" started-at="2023-02-07T21:07:42 IST" name="createProd" finished-at="2023-02-07T21:07:48 IST" duration-ms="5689" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createProd -->
+        <test-method is-config="true" signature="AM()[pri:0, instance:Product.CreateProductTest@61862a7f]" started-at="2023-02-07T21:07:48 IST" name="AM" finished-at="2023-02-07T21:07:51 IST" duration-ms="3341" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AM -->
+        <test-method is-config="true" signature="AC()[pri:0, instance:Product.CreateProductTest@61862a7f]" started-at="2023-02-07T21:07:51 IST" name="AC" finished-at="2023-02-07T21:07:51 IST" duration-ms="134" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AC -->
+        <test-method is-config="true" signature="AT()[pri:0, instance:Product.CreateProductTest@61862a7f]" started-at="2023-02-07T21:08:44 IST" name="AT" finished-at="2023-02-07T21:08:44 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AT -->
-        <test-method is-config="true" signature="AS()[pri:0, instance:Organization.CreateOrganizationTest@510f3d34]" started-at="2023-01-31T20:48:27 IST" name="AS" finished-at="2023-01-31T20:48:27 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="AS()[pri:0, instance:Product.CreateProductTest@61862a7f]" started-at="2023-02-07T21:08:44 IST" name="AS" finished-at="2023-02-07T21:08:44 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AS -->
-      </class> <!-- Organization.CreateOrganizationTest -->
-    </test> <!-- Command line test -->
-  </suite> <!-- Organization.CreateOrganizationTest -->
+      </class> <!-- Product.CreateProductTest -->
+      <class name="Product.CreateProductAndDeleteTest">
+        <test-method is-config="true" signature="BC()[pri:0, instance:Product.CreateProductAndDeleteTest@5fdcaa40]" started-at="2023-02-07T21:08:33 IST" name="BC" finished-at="2023-02-07T21:08:34 IST" duration-ms="759" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BC -->
+        <test-method is-config="true" signature="BM()[pri:0, instance:Product.CreateProductAndDeleteTest@5fdcaa40]" started-at="2023-02-07T21:08:34 IST" name="BM" finished-at="2023-02-07T21:08:36 IST" duration-ms="2017" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BM -->
+        <test-method signature="prodAndDelete()[pri:0, instance:Product.CreateProductAndDeleteTest@5fdcaa40]" started-at="2023-02-07T21:08:36 IST" name="prodAndDelete" finished-at="2023-02-07T21:08:41 IST" duration-ms="4923" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- prodAndDelete -->
+        <test-method is-config="true" signature="AM()[pri:0, instance:Product.CreateProductAndDeleteTest@5fdcaa40]" started-at="2023-02-07T21:08:41 IST" name="AM" finished-at="2023-02-07T21:08:44 IST" duration-ms="3298" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AM -->
+        <test-method is-config="true" signature="AC()[pri:0, instance:Product.CreateProductAndDeleteTest@5fdcaa40]" started-at="2023-02-07T21:08:44 IST" name="AC" finished-at="2023-02-07T21:08:44 IST" duration-ms="141" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AC -->
+      </class> <!-- Product.CreateProductAndDeleteTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

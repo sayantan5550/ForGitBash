@@ -39,10 +39,10 @@ public class CreateOrganizationTest extends BaseClass {
 		// Validation
 		
 		ValidationAndVerificationPage validate  =new ValidationAndVerificationPage(driver);
-//		validate.validateOrganization(orgName);
+		validate.validateOrganization(orgName);
 		
 //		 To fail the test case intentionally
-		validate.validateOrganization("organization name");
+//		validate.validateOrganization("organization name");
 
 	}
 
